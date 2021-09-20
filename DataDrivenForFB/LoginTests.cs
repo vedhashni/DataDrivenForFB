@@ -3,6 +3,7 @@
   Date  : 11-09-21
 */
 
+using AventStack.ExtentReports;
 using NUnit.Framework;
 
 namespace DataDrivenForFB
@@ -10,6 +11,9 @@ namespace DataDrivenForFB
     public class LoginTests : Base.BaseClass
     {
         LoginPageActions pageActions = new LoginPageActions();
+
+        ExtentReports report = ReportClass.report();
+        ExtentTest test;
 
         //Used to test the tile after launcing the browser
         [Test, Order(0)]
@@ -29,15 +33,12 @@ namespace DataDrivenForFB
         [Test, Order(2)]
         public void TestMethodForLoginIntoFaceBook()
         {
-            pageActions.LoginToFaceBook(driver);
-        }
-
-        //Used to check we have login into our dashboard by using title
-        [Test, Order(3)]
-        public void TestMethodForTitleAfterLogin()
-        {
+            test = report.CreateTest("FaceBookTests");
+            test.Log(Status.Info, "FaceBook Automation");
             pageActions.LoginToFaceBook(driver);
             pageActions.TitleAfterLogin(driver);
+            test.Log(Status.Pass, "TestCases Passed");
+            report.Flush();
         }
     }
 }
