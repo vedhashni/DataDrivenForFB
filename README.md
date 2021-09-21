@@ -1,6 +1,7 @@
 # DataDrivenForFB
 This project explains the automation of facebook using selenium.
-##Packages to be used:
+
+Packages to be used:
 *Selenium.webdriver
 *Selenium.webdriver.chromedriver
 *Dotnetseleniumextras.pageobjects
