@@ -31,7 +31,10 @@ namespace DataDrivenForFB.Base
             try
             {
                 log.Info("Configured");
-                driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                //notification is disabled once the browser is launched
+                options.AddArgument("--disable-notifications");
+                driver = new ChromeDriver(options);
                 driver.Url = "https://www.facebook.com/";
                 log.Debug("navigating to url");
                 //Used to maximize the window
