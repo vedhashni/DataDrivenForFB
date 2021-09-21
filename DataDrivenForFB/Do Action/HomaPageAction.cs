@@ -2,6 +2,7 @@
 using AutoItX3Lib;
 using DataDrivenForFB.Data;
 using DataDrivenForFB.TestScreenShots;
+using NUnit.Framework;
 
 namespace DataDrivenForFB.Do_Action
 {
@@ -29,7 +30,8 @@ namespace DataDrivenForFB.Do_Action
             AutoItX3 autoIt = new AutoItX3();
             autoIt.ControlFocus("Open", "", "Edit1");
             ScreenShotClass.TakeScreenShot(driver);
-            autoIt.ControlSetText("Open", "", "Edit1", @"C:\Users\vedhashni.v\Downloads\vacation.jpg");
+            var picture = autoIt.ControlSetText("Open", "", "Edit1", @"C:\Users\vedhashni.v\Downloads\vacation.jpg");
+            Assert.NotNull(picture);
             ScreenShotClass.TakeScreenShot(driver);
             System.Threading.Thread.Sleep(2000);
             autoIt.ControlClick("Open", "", "Button1");

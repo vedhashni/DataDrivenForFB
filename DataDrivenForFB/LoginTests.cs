@@ -40,5 +40,12 @@ namespace DataDrivenForFB
             test.Log(Status.Pass, "TestCases Passed");
             report.Flush();
         }
+
+        [Test]
+        public void TestMethodForEmailSending()
+        {
+            Email.EmailClass.ReadDataFromExcel();
+            Email.EmailClass.email_send();
+        }
     }
 }
