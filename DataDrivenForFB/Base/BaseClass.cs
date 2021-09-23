@@ -53,5 +53,12 @@ namespace DataDrivenForFB.Base
             //Used to close the opened session
             driver.Quit();
         }
+
+        public static void TakeScreenShot(IWebDriver driver)
+        {
+            ITakesScreenshot screenshot = driver as ITakesScreenshot;
+            Screenshot screenshot1 = screenshot.GetScreenshot();
+            screenshot1.SaveAsFile(@"C:\Users\vedhashni.v\source\repos\DataDrivenForFB\DataDrivenForFB\TestScreenShots\FaceBookTest.png");
+        }
     }
 }

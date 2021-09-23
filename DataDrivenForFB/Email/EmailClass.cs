@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium;
 using System.Net;
 using System.Net.Mail;
 

@@ -24,7 +24,6 @@ namespace DataDrivenForFB
                 extent.AddSystemInfo("ProviderName", "vedhashni");
                 extent.AddSystemInfo("Domain", "QA");
                 extent.AddSystemInfo("ProjectName", "FaceBook Automation");
-
                 string conifgPath = @"C:\Users\vedhashni.v\source\repos\DataDrivenForFB\DataDrivenForFB\Report\extent-config.xml";
                 htmlReporter.LoadConfig(conifgPath);
             }

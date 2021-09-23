@@ -16,11 +16,11 @@ namespace DataDrivenForFB
         ExtentTest test;
 
         //Used to test the tile after launcing the browser
-        [Test, Order(0)]
-        public void TestMethodForTitleAfterLaunching()
-        {
-            pageActions.TitleAfterLaunching(driver);
-        }
+        //[Test, Order(0)]
+        //public void TestMethodForTitleAfterLaunching()
+        //{
+        //    pageActions.TitleAfterLaunching(driver);
+        //}
 
         //Used to read the data from excel
         [Test, Order(1)]
@@ -36,7 +36,9 @@ namespace DataDrivenForFB
             test = report.CreateTest("FaceBookTests");
             test.Log(Status.Info, "FaceBook Automation");
             pageActions.LoginToFaceBook(driver);
-            pageActions.TitleAfterLogin(driver);
+            TakeScreenShot(driver);
+            System.Threading.Thread.Sleep(200);
+            test.Info("ScreenShot", MediaEntityBuilder.CreateScreenCaptureFromPath(@"C:\Users\vedhashni.v\source\repos\DataDrivenForFB\DataDrivenForFB\TestScreenShots\FaceBookTest.png").Build());
             test.Log(Status.Pass, "TestCases Passed");
             report.Flush();
         }

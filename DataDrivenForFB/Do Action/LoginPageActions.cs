@@ -1,14 +1,16 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using DataDrivenForFB.Do_Action;
-using DataDrivenForFB.TestScreenShots;
+
 
 namespace DataDrivenForFB
 {
-    public class LoginPageActions
+    public class LoginPageActions:Base.BaseClass
     {
         public static ExcelOperations excel;
         public static LoginPage login;
+        HomaPageAction homepage = new HomaPageAction();
+        //ScreenShotClass screenShot = new ScreenShotClass();
 
         //Used to check title given and retived are same
         public void TitleAfterLaunching(IWebDriver driver)
@@ -31,22 +33,26 @@ namespace DataDrivenForFB
         {
             excel = new ExcelOperations();
             login = new LoginPage(driver);
-            ScreenShotClass.TakeScreenShot(driver);
+            //ScreenShotClass.TakeScreenShot(driver);
+            TakeScreenShot(driver);
             //By invoking the readdate method values in table is retrived
             login.email.SendKeys(excel.ReadData(1, "Email"));
-            ScreenShotClass.TakeScreenShot(driver);
+            //ScreenShotClass.TakeScreenShot(driver);
+            TakeScreenShot(driver);
             //is used to wait in a particular page before taking another action
             System.Threading.Thread.Sleep(1000);
             //By invoking the readdate method values in table is retrived
             login.password.SendKeys(excel.ReadData(1, "Password"));
-            ScreenShotClass.TakeScreenShot(driver);
+           TakeScreenShot(driver);
+            //ScreenShotClass.TakeScreenShot(driver);
             System.Threading.Thread.Sleep(1000);
             login.loginbutton.Click();
             System.Threading.Thread.Sleep(10000);
             //Is used to escape the notification in facebook after login 
-            ScreenShotClass.TakeScreenShot(driver);
+            //ScreenShotClass.TakeScreenShot(driver);
+            TakeScreenShot(driver);
             System.Threading.Thread.Sleep(10000);
-            HomaPageAction.UploadPhotoIntoFacebook(driver);
+            homepage.UploadPhotoIntoFacebook(driver);
         }
 
         //Used to check title given and retived are same
