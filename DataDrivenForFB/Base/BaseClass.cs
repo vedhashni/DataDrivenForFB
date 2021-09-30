@@ -41,9 +41,9 @@ namespace DataDrivenForFB.Base
                 driver.Manage().Window.Maximize();
                 log.Info("Window is maximized");
             }
-            catch (Exception ex)
+            catch 
             {
-                log.Error(ex.Message);
+                throw new CustomException(CustomException.ExceptionType.NoSuchSessionException, "chrome session not created");
             }
 
         }

@@ -43,7 +43,7 @@ namespace DataDrivenForFB
             report.Flush();
         }
 
-        [Test]
+        [Test,Order(3)]
         public void TestMethodForEmailSending()
         {
             Email.EmailClass.ReadDataFromExcel();

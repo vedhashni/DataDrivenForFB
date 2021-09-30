@@ -33,26 +33,33 @@ namespace DataDrivenForFB
         {
             excel = new ExcelOperations();
             login = new LoginPage(driver);
-            //ScreenShotClass.TakeScreenShot(driver);
-            TakeScreenShot(driver);
-            //By invoking the readdate method values in table is retrived
-            login.email.SendKeys(excel.ReadData(1, "Email"));
-            //ScreenShotClass.TakeScreenShot(driver);
-            TakeScreenShot(driver);
-            //is used to wait in a particular page before taking another action
-            System.Threading.Thread.Sleep(1000);
-            //By invoking the readdate method values in table is retrived
-            login.password.SendKeys(excel.ReadData(1, "Password"));
-           TakeScreenShot(driver);
-            //ScreenShotClass.TakeScreenShot(driver);
-            System.Threading.Thread.Sleep(1000);
-            login.loginbutton.Click();
-            System.Threading.Thread.Sleep(10000);
-            //Is used to escape the notification in facebook after login 
-            //ScreenShotClass.TakeScreenShot(driver);
-            TakeScreenShot(driver);
-            System.Threading.Thread.Sleep(10000);
-            homepage.UploadPhotoIntoFacebook(driver);
+            try
+            {
+                //ScreenShotClass.TakeScreenShot(driver);
+                TakeScreenShot(driver);
+                //By invoking the readdate method values in table is retrived
+                login.email.SendKeys(excel.ReadData(1, "Email"));
+                //ScreenShotClass.TakeScreenShot(driver);
+                TakeScreenShot(driver);
+                //is used to wait in a particular page before taking another action
+                System.Threading.Thread.Sleep(1000);
+                //By invoking the readdate method values in table is retrived
+                login.password.SendKeys(excel.ReadData(1, "Password"));
+                TakeScreenShot(driver);
+                //ScreenShotClass.TakeScreenShot(driver);
+                System.Threading.Thread.Sleep(1000);
+                login.loginbutton.Click();
+                System.Threading.Thread.Sleep(10000);
+                //Is used to escape the notification in facebook after login 
+                //ScreenShotClass.TakeScreenShot(driver);
+                TakeScreenShot(driver);
+                System.Threading.Thread.Sleep(10000);
+                homepage.UploadPhotoIntoFacebook(driver);
+            }
+            catch
+            {
+                throw new CustomException(CustomException.ExceptionType.NoSuchElementException, "webdriver unable to locate element");
+            }
         }
 
         //Used to check title given and retived are same
