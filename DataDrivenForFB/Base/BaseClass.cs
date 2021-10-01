@@ -10,8 +10,19 @@ using System.Reflection;
 
 namespace DataDrivenForFB.Base
 {
+    [TestFixture]
    public  class BaseClass
     {
+        private string browser;
+        public BaseClass()
+        {
+
+        }
+        public BaseClass(string browser)
+        {
+            this.browser = browser;
+        }
+
         public static IWebDriver driver;
         //Get Logger for fully qualified name for type of 'AlertTests' class
         private static readonly ILog log = LogManager.GetLogger(typeof(LoginTests));
@@ -20,7 +31,7 @@ namespace DataDrivenForFB.Base
         private static readonly ILoggerRepository repository = LogManager.GetRepository(Assembly.GetCallingAssembly());
 
         [SetUp]
-        public void SetUp()
+        public void BrowserTest()
         {
             //BasicConfigurator.Configure();
             // Valid XML file with Log4Net Configurations
@@ -34,6 +45,15 @@ namespace DataDrivenForFB.Base
                 ChromeOptions options = new ChromeOptions();
                 //notification is disabled once the browser is launched
                 options.AddArgument("--disable-notifications");
+                //switch(browser)
+                //{
+                //    case "chrome":
+                //        driver = new ChromeDriver();
+                //        break;
+                //    case "firefox":
+                //        driver = new FirefoxDriver();
+                //        break;
+                //}
                 driver = new ChromeDriver(options);
                 driver.Url = "https://www.facebook.com/";
                 log.Debug("navigating to url");
@@ -54,7 +74,7 @@ namespace DataDrivenForFB.Base
             driver.Quit();
         }
 
-        public static void TakeScreenShot(IWebDriver driver)
+        public static void TakeScreenShot()
         {
             ITakesScreenshot screenshot = driver as ITakesScreenshot;
             Screenshot screenshot1 = screenshot.GetScreenshot();

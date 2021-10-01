@@ -15,7 +15,7 @@ namespace DataDrivenForFB.Data
         [CacheLookup]
         public IWebElement home;
 
-        [FindsBy(How = How.XPath, Using = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]")]
+        [FindsBy(How = How.XPath, Using = "//body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]")]
         [CacheLookup]
         public IWebElement createpost;
 
@@ -34,5 +34,9 @@ namespace DataDrivenForFB.Data
         [FindsBy(How = How.XPath, Using = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]")]
         [CacheLookup]
         public IWebElement post;
+
+        [FindsBy(How = How.XPath, Using = "//*[text()='Vacation Begins!!']")]
+        [CacheLookup]
+        public IWebElement successfulpost;
     }
 }

@@ -5,11 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DataDrivenForFB
+namespace DataDrivenForFB.Do_Action
 {
-    public class ExcelOperations
+    public class ExcelOperationForSignUp
     {
-        
         public DataTable ExcelData(string filename)
         {
             //We Open the excel file by filestream

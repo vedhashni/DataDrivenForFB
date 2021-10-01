@@ -294,3 +294,178 @@ from disconnected: unable to send message to renderer
 2021-09-24 15:03:05,399 INFO Configured
 2021-09-24 15:03:30,899 DEBUG navigating to url
 2021-09-24 15:03:31,059 INFO Window is maximized
+2021-09-30 12:33:08,769 INFO Configured
+2021-09-30 12:33:34,634 DEBUG navigating to url
+2021-09-30 12:33:34,770 INFO Window is maximized
+2021-09-30 15:35:16,592 INFO Configured
+2021-09-30 15:35:42,015 DEBUG navigating to url
+2021-09-30 15:35:42,149 INFO Window is maximized
+2021-09-30 15:36:32,085 INFO Configured
+2021-09-30 15:36:56,127 DEBUG navigating to url
+2021-09-30 15:36:56,269 INFO Window is maximized
+2021-09-30 15:37:13,587 INFO Configured
+2021-09-30 15:37:38,340 DEBUG navigating to url
+2021-09-30 15:37:38,482 INFO Window is maximized
+2021-09-30 15:38:17,387 INFO Configured
+2021-09-30 15:38:42,022 DEBUG navigating to url
+2021-09-30 15:38:42,168 INFO Window is maximized
+2021-09-30 15:40:27,106 INFO Configured
+2021-09-30 15:40:51,638 DEBUG navigating to url
+2021-09-30 15:40:51,784 INFO Window is maximized
+2021-09-30 15:43:58,142 INFO Configured
+2021-09-30 15:44:22,610 DEBUG navigating to url
+2021-09-30 15:44:22,767 INFO Window is maximized
+2021-09-30 15:45:06,194 INFO Configured
+2021-09-30 15:45:30,892 DEBUG navigating to url
+2021-09-30 15:45:31,032 INFO Window is maximized
+2021-09-30 15:53:03,624 INFO Configured
+2021-09-30 15:53:27,870 DEBUG navigating to url
+2021-09-30 15:53:28,025 INFO Window is maximized
+2021-09-30 15:53:32,221 INFO Configured
+2021-09-30 15:53:56,200 DEBUG navigating to url
+2021-09-30 15:53:56,335 INFO Window is maximized
+2021-09-30 15:53:57,041 INFO Configured
+2021-09-30 15:54:21,362 DEBUG navigating to url
+2021-09-30 15:54:21,500 INFO Window is maximized
+2021-09-30 15:54:22,279 INFO Configured
+2021-09-30 15:56:12,308 INFO Configured
+2021-09-30 15:56:37,303 DEBUG navigating to url
+2021-09-30 15:56:37,455 INFO Window is maximized
+2021-09-30 15:56:41,871 INFO Configured
+2021-09-30 15:57:06,372 DEBUG navigating to url
+2021-09-30 15:57:06,525 INFO Window is maximized
+2021-09-30 15:58:46,259 INFO Configured
+2021-09-30 15:59:10,746 DEBUG navigating to url
+2021-09-30 15:59:10,888 INFO Window is maximized
+2021-09-30 15:59:14,976 INFO Configured
+2021-09-30 15:59:38,864 DEBUG navigating to url
+2021-09-30 15:59:39,019 INFO Window is maximized
+2021-09-30 16:02:34,338 INFO Configured
+2021-09-30 16:02:59,459 DEBUG navigating to url
+2021-09-30 16:02:59,646 INFO Window is maximized
+2021-09-30 16:03:04,012 INFO Configured
+2021-09-30 16:03:28,294 DEBUG navigating to url
+2021-09-30 16:03:28,438 INFO Window is maximized
+2021-09-30 16:03:28,999 INFO Configured
+2021-09-30 16:03:34,215 DEBUG navigating to url
+2021-09-30 16:03:34,372 INFO Window is maximized
+2021-09-30 16:03:34,860 INFO Configured
+2021-09-30 16:06:39,774 INFO Configured
+2021-09-30 16:07:12,907 DEBUG navigating to url
+2021-09-30 16:07:13,122 INFO Window is maximized
+2021-09-30 16:07:17,537 INFO Configured
+2021-09-30 16:07:41,758 DEBUG navigating to url
+2021-09-30 16:07:41,899 INFO Window is maximized
+2021-09-30 16:07:42,579 INFO Configured
+2021-09-30 16:07:51,020 INFO Configured
+2021-09-30 16:09:36,481 INFO Configured
+2021-09-30 16:10:00,744 DEBUG navigating to url
+2021-09-30 16:10:00,890 INFO Window is maximized
+2021-09-30 16:10:05,144 INFO Configured
+2021-09-30 16:10:29,263 DEBUG navigating to url
+2021-09-30 16:10:29,413 INFO Window is maximized
+2021-09-30 19:24:40,837 INFO Configured
+2021-09-30 19:25:05,629 DEBUG navigating to url
+2021-09-30 19:25:05,772 INFO Window is maximized
+2021-09-30 19:25:09,371 INFO Configured
+2021-09-30 19:25:39,703 DEBUG navigating to url
+2021-09-30 19:25:39,835 INFO Window is maximized
+2021-09-30 19:26:05,622 INFO Configured
+2021-09-30 19:26:31,377 DEBUG navigating to url
+2021-09-30 19:26:31,517 INFO Window is maximized
+2021-09-30 19:27:45,613 INFO Configured
+2021-09-30 19:28:10,612 DEBUG navigating to url
+2021-09-30 19:28:10,762 INFO Window is maximized
+2021-09-30 19:30:07,654 INFO Configured
+2021-09-30 19:30:32,350 DEBUG navigating to url
+2021-09-30 19:30:32,489 INFO Window is maximized
+2021-09-30 19:30:36,966 INFO Configured
+2021-09-30 19:31:01,122 DEBUG navigating to url
+2021-09-30 19:31:01,267 INFO Window is maximized
+2021-09-30 19:33:01,355 INFO Configured
+2021-09-30 19:33:26,140 DEBUG navigating to url
+2021-09-30 19:33:26,279 INFO Window is maximized
+2021-09-30 19:33:50,099 INFO Configured
+2021-09-30 19:34:14,768 DEBUG navigating to url
+2021-09-30 19:34:14,902 INFO Window is maximized
+2021-09-30 19:35:28,829 INFO Configured
+2021-09-30 19:35:53,609 DEBUG navigating to url
+2021-09-30 19:35:53,753 INFO Window is maximized
+2021-09-30 19:41:06,669 INFO Configured
+2021-09-30 19:41:31,268 DEBUG navigating to url
+2021-09-30 19:41:31,406 INFO Window is maximized
+2021-09-30 19:41:35,685 INFO Configured
+2021-09-30 19:41:59,938 DEBUG navigating to url
+2021-09-30 19:42:00,072 INFO Window is maximized
+2021-09-30 19:49:00,556 INFO Configured
+2021-09-30 19:49:04,497 DEBUG navigating to url
+2021-09-30 19:49:04,639 INFO Window is maximized
+2021-09-30 19:49:09,054 INFO Configured
+2021-09-30 19:49:13,898 DEBUG navigating to url
+2021-09-30 19:49:14,037 INFO Window is maximized
+2021-09-30 19:49:38,400 INFO Configured
+2021-09-30 19:49:42,844 DEBUG navigating to url
+2021-09-30 19:49:43,010 INFO Window is maximized
+2021-09-30 19:50:56,592 INFO Configured
+2021-09-30 19:51:20,878 DEBUG navigating to url
+2021-09-30 19:51:21,026 INFO Window is maximized
+2021-10-01 12:22:35,744 INFO Configured
+2021-10-01 12:22:47,381 DEBUG navigating to url
+2021-10-01 12:22:47,527 INFO Window is maximized
+2021-10-01 13:42:44,138 INFO Configured
+2021-10-01 13:42:56,926 DEBUG navigating to url
+2021-10-01 13:42:57,061 INFO Window is maximized
+2021-10-01 13:44:27,505 INFO Configured
+2021-10-01 13:44:32,004 DEBUG navigating to url
+2021-10-01 13:44:32,168 INFO Window is maximized
+2021-10-01 13:45:20,767 INFO Configured
+2021-10-01 13:45:35,132 DEBUG navigating to url
+2021-10-01 13:45:35,271 INFO Window is maximized
+2021-10-01 13:46:07,143 INFO Configured
+2021-10-01 13:46:11,648 DEBUG navigating to url
+2021-10-01 13:46:11,790 INFO Window is maximized
+2021-10-01 15:10:10,862 INFO Configured
+2021-10-01 15:10:23,646 DEBUG navigating to url
+2021-10-01 15:10:23,781 INFO Window is maximized
+2021-10-01 15:11:52,397 INFO Configured
+2021-10-01 15:11:56,784 DEBUG navigating to url
+2021-10-01 15:11:56,913 INFO Window is maximized
+2021-10-01 15:12:39,629 INFO Configured
+2021-10-01 15:12:52,246 DEBUG navigating to url
+2021-10-01 15:12:52,394 INFO Window is maximized
+2021-10-01 15:13:54,038 INFO Configured
+2021-10-01 15:14:06,702 DEBUG navigating to url
+2021-10-01 15:14:06,845 INFO Window is maximized
+2021-10-01 15:14:50,302 INFO Configured
+2021-10-01 15:15:02,894 DEBUG navigating to url
+2021-10-01 15:15:03,033 INFO Window is maximized
+2021-10-01 15:16:00,275 INFO Configured
+2021-10-01 15:16:13,511 DEBUG navigating to url
+2021-10-01 15:16:13,665 INFO Window is maximized
+2021-10-01 15:18:21,555 INFO Configured
+2021-10-01 15:18:25,962 DEBUG navigating to url
+2021-10-01 15:18:26,099 INFO Window is maximized
+2021-10-01 15:21:09,351 INFO Configured
+2021-10-01 15:21:13,885 DEBUG navigating to url
+2021-10-01 15:21:14,032 INFO Window is maximized
+2021-10-01 15:24:22,058 INFO Configured
+2021-10-01 15:24:28,402 DEBUG navigating to url
+2021-10-01 15:24:28,543 INFO Window is maximized
+2021-10-01 15:28:35,256 INFO Configured
+2021-10-01 15:28:40,034 DEBUG navigating to url
+2021-10-01 15:28:40,172 INFO Window is maximized
+2021-10-01 16:16:33,024 INFO Configured
+2021-10-01 16:16:37,660 DEBUG navigating to url
+2021-10-01 16:16:37,801 INFO Window is maximized
+2021-10-01 16:17:10,600 INFO Configured
+2021-10-01 16:17:15,428 DEBUG navigating to url
+2021-10-01 16:17:15,570 INFO Window is maximized
+2021-10-01 16:17:42,401 INFO Configured
+2021-10-01 16:17:47,165 DEBUG navigating to url
+2021-10-01 16:17:47,312 INFO Window is maximized
+2021-10-01 22:00:08,708 INFO Configured
+2021-10-01 22:00:25,506 DEBUG navigating to url
+2021-10-01 22:00:25,642 INFO Window is maximized
+2021-10-01 22:05:25,469 INFO Configured
+2021-10-01 22:05:38,455 DEBUG navigating to url
+2021-10-01 22:05:38,587 INFO Window is maximized

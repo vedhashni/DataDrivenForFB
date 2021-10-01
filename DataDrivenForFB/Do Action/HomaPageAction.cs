@@ -2,47 +2,54 @@
 using AutoItX3Lib;
 using DataDrivenForFB.Data;
 using NUnit.Framework;
+using System;
 
 namespace DataDrivenForFB.Do_Action
 {
-    public class HomaPageAction
+    public class HomaPageAction:Base.BaseClass
     {
         public static HomePageData data;
-        public void UploadPhotoIntoFacebook(IWebDriver driver)
+        public static LoginPageActions login;
+        public void UploadPhotoIntoFacebook()
         {
             data = new HomePageData(driver);
+            login = new LoginPageActions();
+            login.LoginToFaceBook();
             try
             {
                 data.home.Click();
-                //ScreenShotClass.TakeScreenShot(driver);
                 System.Threading.Thread.Sleep(9000);
                 data.createpost.Click();
-                //ScreenShotClass.TakeScreenShot(driver);
+                //TakeScreenShot();
                 System.Threading.Thread.Sleep(9000);
                 data.message.SendKeys("Vacation Begins!!");
-                //ScreenShotClass.TakeScreenShot(driver);
                 System.Threading.Thread.Sleep(9000);
                 data.photo.Click();
-                //ScreenShotClass.TakeScreenShot(driver);
-                System.Threading.Thread.Sleep(5000);
+                System.Threading.Thread.Sleep(9000);
                 data.addphoto.Click();
-                //ScreenShotClass.TakeScreenShot(driver);
-                System.Threading.Thread.Sleep(4000);
+                System.Threading.Thread.Sleep(9000);
                 //AutoIt- Handle Windows that do not belong to Browser
                 AutoItX3 autoIt = new AutoItX3();
                 autoIt.ControlFocus("Open", "", "Edit1");
-                //ScreenShotClass.TakeScreenShot(driver);
                 var picture = autoIt.ControlSetText("Open", "", "Edit1", @"C:\Users\vedhashni.v\Downloads\vacation.jpg");
                 Assert.NotNull(picture);
-                //ScreenShotClass.TakeScreenShot(driver);
-                System.Threading.Thread.Sleep(2000);
+                System.Threading.Thread.Sleep(3000);
                 autoIt.ControlClick("Open", "", "Button1");
-                //ScreenShotClass.TakeScreenShot(driver);
                 System.Threading.Thread.Sleep(4000);
-                //ScreenShotClass.TakeScreenShot(driver);
+                TakeScreenShot();
                 data.post.Click();
-                //ScreenShotClass.TakeScreenShot(driver);
-                System.Threading.Thread.Sleep(15000);
+                TakeScreenShot();
+                System.Threading.Thread.Sleep(1000);
+                if (data.successfulpost.Displayed)
+                {
+                    Console.WriteLine("Photo Uploaded successfully");
+                }
+                else
+                {
+                    Console.WriteLine("Photo Not Uploaded successfully");
+                }
+                ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0,1500)");
+                System.Threading.Thread.Sleep(2000);
             }
             catch
             {
